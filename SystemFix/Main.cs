@@ -32,11 +32,26 @@ namespace SystemFix
             this.WindowState = FormWindowState.Minimized;
         }
 
+
+        /*private void OpenRegisterDevices(object formRD)
+        {
+            if () ;
+        }*/
+
+
+
+
+
+
+
         private void btnLogOut_Click(object sender, EventArgs e)
         {
             LogIn Iniciar = new LogIn();
-            this.Close();
-            Iniciar.Show();
+
+            if (MessageBox.Show("Está a punto de cerrar sesión, ¿Desea continuar?","¡Advertencia!",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
+                this.Close();
+                Iniciar.Show();
         }
     }
 }

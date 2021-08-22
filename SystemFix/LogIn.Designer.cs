@@ -143,9 +143,9 @@ namespace SystemFix
             // 
             // btnLogIn
             // 
-            this.btnLogIn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.btnLogIn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(20)))), ((int)(((byte)(20)))));
             this.btnLogIn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLogIn.FlatAppearance.BorderSize = 0;
+            this.btnLogIn.FlatAppearance.BorderColor = System.Drawing.Color.Silver;
             this.btnLogIn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
             this.btnLogIn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btnLogIn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -188,9 +188,8 @@ namespace SystemFix
             this.txtMessage.ForeColor = System.Drawing.Color.Silver;
             this.txtMessage.Location = new System.Drawing.Point(361, 286);
             this.txtMessage.Name = "txtMessage";
-            this.txtMessage.Size = new System.Drawing.Size(58, 17);
+            this.txtMessage.Size = new System.Drawing.Size(0, 17);
             this.txtMessage.TabIndex = 9;
-            this.txtMessage.Text = "ERROR";
             // 
             // pictureBox2
             // 
@@ -232,11 +231,9 @@ namespace SystemFix
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "LogIn";
-            this.Opacity = 0.95D;
+            this.Opacity = 0.89D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
-            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.LogIn_KeyPress);
-            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.LogIn_MouseDown);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
